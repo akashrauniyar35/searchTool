@@ -1,7 +1,6 @@
 import { Button, Flex, Heading, Input, Text, IconButton, Box, Tabs, TabList, Tab, TabPanel, TabPanels, } from '@chakra-ui/react'
 import { SearchIcon } from '@chakra-ui/icons'
 import React from 'react'
-import OrderForecast from '../src/components/OrderForecast'
 import InstallationFine from '../src/components/InstallationFile'
 import Reports from './Reports'
 import Search from './Table'
