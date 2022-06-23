@@ -192,7 +192,7 @@ function InstallationFine() {
                             {data.map((item) => {
 
                                 return (
-                                    <th> <Box key={item.id} bg={color} mr='-1' px='6' textAlign='left' py='2'><Text key={item.id} color='gray.700' fontSize='md'>{item.title}</Text> </Box></th>
+                                    <th key={item.id}> <Box key={item.id} bg={color} mr='-1' px='6' textAlign='left' py='2'><Text key={item.id} color='gray.700' fontSize='md'>{item.title}</Text> </Box></th>
                                 )
                             })}
                         </tr>
@@ -200,7 +200,7 @@ function InstallationFine() {
                         <tr>
                             {data.map((item) => {
                                 return (
-                                    <td> <Box  key={item.id}  w={{ base: item.value.length >= 100 ? '300px' : '100px', md: item.value.length >= 100 ? '500px' : '100px' }} ml='6' textAlign='justify' mr='-1'><Text key={item.id}>{item.value}</Text></Box> </td>
+                                    <td key={item.id}> <Box key={item.id} w={{ base: item.value.length >= 100 ? '300px' : '100px', md: item.value.length >= 100 ? '500px' : '100px' }} ml='6' textAlign='justify' mr='-1'><Text key={item.id}>{item.value}</Text></Box> </td>
                                 )
                             })}
 
@@ -224,7 +224,7 @@ function InstallationFine() {
                             {data.map((item) => {
 
                                 return (
-                                    <th> <Box  key={item.id}  bg={'yellow.200'} mr='-1' px='6' textAlign='left' py='2'><Text key={item.id} color='gray.700' fontSize='md'>{item.title}</Text> </Box></th>
+                                    <th key={item.id}> <Box key={item.id} bg={'yellow.200'} mr='-1' px='6' textAlign='left' py='2'><Text key={item.id} color='gray.700' fontSize='md'>{item.title}</Text> </Box></th>
                                 )
                             })}
                         </tr>
@@ -232,7 +232,7 @@ function InstallationFine() {
                         <tr>
                             {data.map((item) => {
                                 return (
-                                    <td> <Box  key={item.id}  w={{ base: item.value.length >= 100 ? '300px' : '100px', md: item.value.length >= 100 ? '500px' : '100px' }} ml='6' textAlign='justify' mr='-1'><Text key={item.id}>{item.value}</Text></Box> </td>
+                                    <td key={item.id}> <Box key={item.id} w={{ base: item.value.length >= 100 ? '300px' : '100px', md: item.value.length >= 100 ? '500px' : '100px' }} ml='6' textAlign='justify' mr='-1'><Text key={item.id}>{item.value}</Text></Box> </td>
                                 )
                             })}
 
@@ -267,7 +267,7 @@ function InstallationFine() {
                             {_VEH_.map((item) => {
 
                                 return (
-                                    <th> <Box  key={item.id}  w={{}} bg={'red.200'} mr='-1' px='6' textAlign='left' py='2'><Text key={item.id} color='gray.700' fontSize='md'>{item.title}</Text> </Box></th>
+                                    <th key={item.id}> <Box key={item.id} w={{}} bg={'red.200'} mr='-1' px='6' textAlign='left' py='2'><Text key={item.id} color='gray.700' fontSize='md'>{item.title}</Text> </Box></th>
                                 )
                             })}
                         </tr>
@@ -275,7 +275,7 @@ function InstallationFine() {
                         <tr>
                             {_VEH_.map((item) => {
                                 return (
-                                    <td> <Box key={item.id}><Text key={item.id}>{item.value1}</Text></Box> </td>
+                                    <td key={item.id}> <Box key={item.id}><Text key={item.id}>{item.value1}</Text></Box> </td>
                                 )
                             })}
 
@@ -283,7 +283,7 @@ function InstallationFine() {
                         <tr>
                             {_VEH_.map((item) => {
                                 return (
-                                    <td> <Box key={item.id}><Text key={item.id}>{item.value2}</Text></Box> </td>
+                                    <td key={item.id}> <Box key={item.id}><Text key={item.id}>{item.value2}</Text></Box> </td>
                                 )
                             })}
 
@@ -306,7 +306,7 @@ function InstallationFine() {
                             {data.map((item) => {
 
                                 return (
-                                    <th> <Box key={item.id} bg={'green.200'} mr='-1' px='6' textAlign='left' py='2'><Text key={item.id} color='gray.700' fontSize='md'>{item.title}</Text> </Box></th>
+                                    <th key={item.id}> <Box key={item.id} bg={'green.200'} mr='-1' px='6' textAlign='left' py='2'><Text key={item.id} color='gray.700' fontSize='md'>{item.title}</Text> </Box></th>
                                 )
                             })}
                         </tr>
@@ -314,10 +314,9 @@ function InstallationFine() {
                         <tr>
                             {data.map((item) => {
                                 return (
-                                    <td> <Box  key={item.id} w={{ base: item.value.length >= 100 ? '300px' : '100px', md: item.value.length >= 100 ? '500px' : '100px' }} ml='6' textAlign='justify' mr='-1'><Text key={item.id}>{item.value}</Text></Box> </td>
+                                    <td key={item.id}> <Box key={item.id} w={{ base: item.value.length >= 100 ? '300px' : '100px', md: item.value.length >= 100 ? '500px' : '100px' }} ml='6' textAlign='justify' mr='-1'><Text key={item.id}>{item.value}</Text></Box> </td>
                                 )
                             })}
-
                         </tr>
 
                     </table>
