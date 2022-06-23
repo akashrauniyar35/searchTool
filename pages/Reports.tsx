@@ -98,7 +98,7 @@ function Reports() {
                             <Flex flexDirection='row' flexWrap='wrap'>
                                 {allReports.map((item) => {
                                     return (
-                                        <Button onClick={() => selectReport(item.title)} bg='white' mr='5' mb='5' px='10'><Text color='gray.700'>{item.title}</Text></Button>
+                                        <Button key={item.id} onClick={() => selectReport(item.title)} bg='white' mr='5' mb='5' px='10'><Text color='gray.700'>{item.title}</Text></Button>
                                     )
                                 })}
                             </Flex>

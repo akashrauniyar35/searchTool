@@ -173,7 +173,7 @@ function InstallationFine() {
             <Box boxShadow='xl' p='6' rounded='md' bg='white' mb='8' w='80%'>
                 <Flex align="center" mb='4'>
                     <Text fontSize='lg' mr='4'>Results from</Text>
-                    <Heading  fontSize='lg'>"Test Table"</Heading>
+                    <Heading  fontSize='lg'>Test Table</Heading>
                     <Text fontSize='lg' ml='4'> files</Text>
                 </Flex>
 
@@ -183,7 +183,7 @@ function InstallationFine() {
                             {data.map((item) => {
 
                                 return (
-                                    <th> <Box bg={color} mr='-1' px='6' textAlign='left' py='2'><Text color='gray.700' fontSize='md'>{item.title}</Text> </Box></th>
+                                    <th> <Box key={item.id} bg={color} mr='-1' px='6' textAlign='left' py='2'><Text color='gray.700' fontSize='md'>{item.title}</Text> </Box></th>
                                 )
                             })}
                         </tr>
@@ -191,7 +191,7 @@ function InstallationFine() {
                         <tr>
                             {data.map((item) => {
                                 return (
-                                    <td> <Box w={{ base: item.value.length >= 100 ? '300px' : '100px', md: item.value.length >= 100 ? '500px' : '100px' }} ml='6' textAlign='justify' mr='-1'><Text>{item.value}</Text></Box> </td>
+                                    <td> <Box key={item.id} w={{ base: item.value.length >= 100 ? '300px' : '100px', md: item.value.length >= 100 ? '500px' : '100px' }} ml='6' textAlign='justify' mr='-1'><Text>{item.value}</Text></Box> </td>
                                 )
                             })}
 
@@ -205,7 +205,7 @@ function InstallationFine() {
             <Box boxShadow='xl' p='6' rounded='lg' bg='white' mb='8' w='80%'>
                 <Flex align="center" mb='4'>
                     <Text fontSize='lg' mr='4'>Results from</Text>
-                    <Heading  fontSize='lg'>"_VEH_"</Heading>
+                    <Heading  fontSize='lg'>_VEH_</Heading>
                     <Text fontSize='lg' ml='4'> files</Text>
                 </Flex>
 
@@ -215,7 +215,7 @@ function InstallationFine() {
                             {_VEH_.map((item) => {
 
                                 return (
-                                    <th> <Box w={{ }} bg={color} mr='-1' px='6' textAlign='left' py='2'><Text color='gray.700' fontSize='md'>{item.title}</Text> </Box></th>
+                                    <th> <Box key={item.id} w={{ }} bg={color} mr='-1' px='6' textAlign='left' py='2'><Text color='gray.700' fontSize='md'>{item.title}</Text> </Box></th>
                                 )
                             })}
                         </tr>
@@ -223,7 +223,7 @@ function InstallationFine() {
                         <tr>
                             {_VEH_.map((item) => {
                                 return (
-                                    <td> <Box><Text>{item.value1}</Text></Box> </td>
+                                    <td> <Box key={item.id}><Text>{item.value1}</Text></Box> </td>
                                 )
                             })}
 
@@ -231,7 +231,7 @@ function InstallationFine() {
                         <tr>
                             {_VEH_.map((item) => {
                                 return (
-                                    <td> <Box><Text>{item.value2}</Text></Box> </td>
+                                    <td> <Box key={item.id}><Text>{item.value2}</Text></Box> </td>
                                 )
                             })}
 
