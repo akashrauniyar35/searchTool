@@ -10,12 +10,7 @@ import Search from './Table'
 
 
 function SearchPage() {
-
-
-
-
-
-
+    
     return (
         <>
             <Box>
